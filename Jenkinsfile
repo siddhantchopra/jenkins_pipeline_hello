@@ -5,8 +5,10 @@ pipeline {
             steps { 
                echo 'This is a minimal pipeline.' 
             }
-            steps{
-                echo 'This is disaster'
+        }
+        stage('Deploy') {
+            steps {
+                echo 'This is a disaster'
             }
         }
     }
